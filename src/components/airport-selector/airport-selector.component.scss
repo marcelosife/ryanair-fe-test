@@ -1,0 +1,19 @@
+
+.list-select {
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.list-item {
+    height: 40px;
+    font-family: inherit;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.list-item:hover {
+    border-color: #073590;
+    color: #073590;
+}
+

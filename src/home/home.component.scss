@@ -1,0 +1,49 @@
+body{ white-space-collapse: discard; }
+.head {
+	background-color: #073590;
+	height: 65px;
+	border-bottom: 3px solid #F1C933;
+}
+
+.head-text{
+	color:#fff !important;
+}
+
+.head-text:hover{
+	color:#F1C933 !important;
+}
+
+.logo{
+	font-weight: 700;
+	font-size: 15pt;
+}
+
+.nav-item{
+	width:200px;
+}
+
+.home-desc{
+	background-color: #2191eb;
+	color:#fff !important;
+	height: 65px;
+	font-size: 15pt;
+	text-align:center;
+}
+
+.button {
+	background-color: #F1C933;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 13pt;
+    padding-top: 2px;
+}
+
+.button a{
+	color: #073590 !important;
+}
+
+column{
+	padding: 0px!important;
+}
+

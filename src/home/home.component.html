@@ -1,0 +1,50 @@
+<div >
+  <nav class="nav head">
+    <div class="nav-left">
+      <a class="nav-item is-brand head-text logo" href="#" ui-sref=".desc">
+        CheapFlight
+      </a>
+    </div>
+
+    <div class="nav-center">
+      <a  href="/" ui-sref-active="active" class="nav-item head-text" ng-click='$ctrl.hideFilters()'>Home</a>
+      <a  class="nav-item head-text" ng-click='$ctrl.showFilters()'> Flights 
+      <span style="color:#F1C933;font-weight: 700;font-size: 11pt;">&nbsp&nbsp+</span></a>
+      
+    </div>
+
+    <div class="nav-right nav-menu">
+       
+    </div>
+  </nav>
+  <section ng-show="$ctrl.filtersON"  class="ng-hide"> 
+    <div class="box">
+      <div class="container">             
+        <div class="columns is-multiline " >                
+          <div class="column is-6 is-offset-3"  >
+            <airport-wrapper 
+              flyout="$ctrl.flyout"
+              flyback="$ctrl.flyback"
+              infoairp= "$ctrl.airpsinfo">
+            </airport-wrapper>
+          </div>
+          <div class="column is-6 is-offset-3"  >
+            <date-wrapper
+              startdate="$ctrl.dayout"
+              enddate="$ctrl.dayback">
+            </date-wrapper> 
+          </div>
+          <div class="column is-6 is-offset-3"  >
+            <div class="columns" > 
+              <div class="column is-2 is-offset-10 button"  >
+                <a ui-sref="home.list({startDate: $ctrl.dayout.date, endDate:$ctrl.dayback.date, airportFrom:$ctrl.flyout.code, airportTo:$ctrl.flyback.code}) " >Let's go!</a>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section  class="box home-desc">{{$ctrl.description}}</section>
+  <div ui-view flights="$ctrl.cheaperfly"></div>
+</div>

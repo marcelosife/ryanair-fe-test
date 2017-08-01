@@ -1,0 +1,26 @@
+<section >
+    <div class="flights-card " ng-hide="$ctrl.noresults">        
+        <div class="container-fluid">            
+            <div class="columns is-multiline " >                
+                <div class="column is-10 is-offset-1 flights-header"  >{{$ctrl.flights.airportFrom}} - {{$ctrl.flights.airportTo}}</div> 
+                <div class="column is-10 is-offset-1 "  >
+                    <div class="columns   is-multiline flight"  ng-repeat="flight in $ctrl.flights.flights">
+                        <div class="column is-9 " >
+                            <div class="columns  "> 
+                                <div class="column is-3" >{{flight._dateTo.dayTo}}<br/>{{flight._dateTo.timeTo}}</div>
+                                <div class="column is-6" ><hr/><i class="fa fa-plane" aria-hidden="true"></i></div>
+                                <div class="column is-3" >{{flight._dateFrom.dayFrom}}<br/>{{flight._dateFrom.timeFrom}}</div>
+                            </div>
+                        </div>
+                        <div class="column is-3 flight-price" >
+                            
+                                <div class="column is-10 is-offset-1 price" >{{flight.price | number:2}}&nbsp;{{flight.currency}}</div>
+                           
+                        </div>
+                    </div> 
+                </div>                  
+            </div>
+        </div>        
+    </div>
+    <div ng-show="$ctrl.noresults" class="column is-6 is-offset-3 notification is-danger noresult">No flights found</div>
+</section>

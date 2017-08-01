@@ -1,0 +1,7 @@
+<div >
+	<input type="text" ng-model="$ctrl.varairp.code" class="input is-medium {{$ctrl.varairp.valid}}" ng-click="$ctrl.showOptions()" ng-change="$ctrl.changeOptions()">
+	<div class="list-select" ng-show="$ctrl.soptions">
+		<ul>
+		<li class="list-item" ng-repeat="airport in $ctrl.infoairp | filter:$ctrl.varairp.code" ng-click="$ctrl.clickOptions(airport.code);">{{airport.name+"-("+airport.code+")"}}</li>
+	</div>
+</div>

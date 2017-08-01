@@ -1,0 +1,47 @@
+.flights-card {
+    margin: 2% 20% 20% 20%;
+    text-align: center;
+}
+
+.flights-header {
+    border: 1px solid #f0f0f0;
+    border-radius:4px;
+    font-weight: bold;
+    background-color: #073590;
+    font-family: arial;
+    font-size: 13pt;
+    color:#fff
+}
+
+.flight{
+	border: 1px solid #b1b1b1;
+    border-radius:4px;
+    font-weight: bold;
+    background-color: #fff;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 13pt;
+    margin-bottom: 11px !important;
+}
+
+.flight-time{
+	float:left;
+}
+
+.flight-price{
+	border-left: 1px solid #b1b1b1;
+}
+
+.price{
+    background-color: #F1C933;
+    border-radius: 5px;
+    color: #073590;
+    
+}
+
+.noresult{
+    height: 100px;
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 30px;
+}
